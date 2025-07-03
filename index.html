@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ciudadanía Digital 2: Tornado</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <header>
+        <h1><span class="book-icon">🧑‍💻</span> <strong>Ciudadanía Digital Misión 2: Tornado</strong></h1>
+        <div class="header-widgets">
+            <div class="timer-container">
+                <span id="timer">⏱️ 00:00</span>
+                <button id="startStop">Start</button>
+                <button id="reset">Reset</button>
+            </div>
+            <div class="theme-toggle">
+                <i class="fas fa-sun"></i>
+                <label class="switch">
+                    <input type="checkbox" id="theme-toggle-input">
+                    <span class="slider round"></span>
+                </label>
+                <i class="fas fa-moon"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <aside class="activity-list">
+            <h2>Actividades</h2>
+            <ul>
+                <li><a href="#activity-0">👁️</a></li>
+                <li><a href="#activity-1">1</a></li>
+                <li><a href="#activity-2">2</a></li>
+                <li><a href="#activity-3">3</a></li>
+                <li><a href="#activity-4">4</a></li>
+            </ul>
+
+            <div class="sidebar-info">
+                <p>💡 Cada actividad está cuidadosamente diseñada para involucrar a los estudiantes.</p>
+                <p>⏱️ Se proporcionan estimaciones de tiempo para cada actividad para ayudarle a mantener el rumbo.</p>
+            </div>
+        </aside>
+
+        <main class="content">
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+
+            <button id="toggle-dialogues">Mostrar todos los diálogos</button>
+
+            <!-- SECCIÓN "DE UN VISTAZO" (ANTES ACTIVITY-0) -->
+            <div class="activity-card" id="activity-0">
+                <h2><span class="book-icon">📝</span> De un Vistazo: Sesión Gnius</h2>
+                <p class="overview-subtitle">Resumen rápido de objetivos, materiales y preparación para el facilitador.</p>
+                <div class="overview-table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th style="width: 50%;">Objetivos, Tácticas y Entregable</th>
+                                <th style="width: 50%;">Materiales Específicos y Preparación Previa</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <strong>Objetivos:</strong>
+                                    <ul>
+                                        <li>Comprender la reputación digital y marca personal temprana.</li>
+                                        <li>Analizar cómo nuestras acciones en línea afectan cómo nos ven los demás.</li>
+                                        <li>Desarrollar estrategias para cuidar la imagen personal.</li>
+                                        <li>Conocer herramientas para conocer nuestra reputación digital.</li>
+                                        <li>Entender la relación entre acciones actuales y futuro digital.</li>
+                                        <li>Analizar cómo una publicación puede impactar la reputación y reflexionar sobre qué tipo de imagen desean proyectar en Internet.</li>
+                                    </ul>
+                                    <strong>Secuencia de Clase:</strong>
+                                    <ul>
+                                        <li><strong class="tactic-highlight">Recuerdo Relámpago</strong></li>
+                                        <li><strong class="tactic-highlight">Conexión Ada</strong></li>
+                                        <li><strong class="tactic-highlight">Challenge Express</strong></li>
+                                        <li><strong class="tactic-highlight">Ticket de Salida/Tweet de Aprendizaje</strong></li>
+                                    </ul>
+                                    <strong>Entregable Clave:</strong>
+                                    <ul>
+                                        <li>Creación en parejas de un ‘Kit de Primeros Auxilios para la Reputación Digital’ (checklist, mini-guía o infografía).</li>
+                                        <li>Creación individual de un "Consejo Estratégico Digital" (Tweet de Aprendizaje).</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <strong>Materiales Específicos:</strong>
+                                    <ul>
+                                        <li>Proyector o pantalla interactiva.</li>
+                                        <li>Conexión a internet estable.</li>
+                                        <li>Chat de "Ada" activo y funcionando.</li>
+                                        <li>Presentación de diapositivas.</li>
+                                    </ul>
+                                    <strong>Preparación Previa para ESTA Sesión:</strong>
+                                    <ol>
+                                        <li><strong>Revisión de Misión (Interna):</strong>
+                                            <ul>
+                                                <li>Verificar conexión a internet.</li>
+                                                <li>Asegurar disponibilidad y carga de los dispositivos físicos (ej. tabletas, ordenadores).</li>
+                                                <li>Tener la presentación de diapositivas lista y en orden.</li>
+                                                <li>Probar el chat "Ada" para asegurar su operatividad.</li>
+                                            </ul>
+                                        </li>
+                                        <li><strong>Familiarización:</strong> Revisar el flujo de la sesión, los diálogos sugeridos y los tiempos de cada actividad.</li>
+                                    </ol>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- FIN DE LA SECCIÓN "DE UN VISTAZO" -->
+
+            <div class="activity-card" id="activity-1">
+                <h2>⚡ Actividad 1: Recuerdo Relámpago ⏰ 5 minutos</h2>
+                <p>Activar conocimientos de la Misión 1 (Impacto de las publicaciones) mediante categorización y pensamiento crítico.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Recuerdo Relámpago ⏰ 3 minutos</h3>
+                            <p>Proyecta Diapositiva 2. Recuerdo Relámpago: ¿Cuál sobra?</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">“¡Atención, equipo! Vamos a empezar como detectives de la reputación. Les mostraré 4 palabras. Tres están conectadas directamente con lo que construye nuestra imagen digital, pero una está infiltrada. ¿Cuál sobra? Piensen en lo que vimos en la misión del Volcán. <br>(En pantalla se muestran las palabras: Comentario, Meme, Contraseña, Like)”</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Recuerdo Relámpago ⏰ 2 minutos</h3>
+                            <p>Realiza una breve reflexión guiada para conectar la dinámica con el tema de la misión.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">“¡Exacto! ‘Contraseña’ sobra porque se relaciona con seguridad, no directamente con las acciones que forman nuestra reputación, como los comentarios, memes o likes. Ya somos expertos en identificar esas ‘rocas’ que lanza el volcán. Hoy, vamos a convertirnos en estrategas. ¿Cómo podemos planificar y usar herramientas para que nuestra reputación nos ayude a alcanzar nuestras metas futuras? Vamos a explorarlo.”</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-2">
+                <h2>⚡ Actividad 2: Conexión Ada ⏰ 20 minutos</h2>
+                <p>Explorar de forma individual los conceptos de estrategia digital, futuro en línea y herramientas básicas de monitoreo.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Conexión Ada ⏰ 0 minutos</h3>
+                            <p>Proyecta Diapositiva 3. Conexión Ada: Misión Tornado.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">“Conéctense a la plataforma. Ada los pondrá en situaciones donde una acción de hoy puede tener un gran impacto mañana. La clave de hoy: Misión Tornado. Avancen a su ritmo. Si algo no queda claro, observen con atención.”</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Conexión Ada ⏰ 20 minutos</h3>
+                            <p>Proyecta Diapositiva 4. Timer 20 min.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-3">
+                <h2>⚡ Actividad 3: Challenge Express ⏰ 8 minutos</h2>
+                <p>Presentar un caso que conecte la reputación digital con una oportunidad futura, generando empatía.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Challenge Express ⏰ 2 minutos</h3>
+                            <p>Proyecta Diapositiva 5. Challenge Express: El Casting del Futuro.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">“Atención, tenemos una misión de estrategia. Escuchen la historia: Daniela sueña con ser aceptada en el ‘Campamento de Jóvenes Creadores’ de verano. Es su gran oportunidad. Sabe que los organizadores son muy serios y que, como parte del proceso, buscarán su nombre en internet para conocerla mejor. Daniela se pone nerviosa y piensa: ‘¿Qué encontrarán sobre mí? ¿Una foto vieja en la que me etiquetaron? ¿Un comentario tonto que hice hace años? ¿Y si eso arruina mi oportunidad?’. <br>Este es su reto: En parejas, van a usar el ‘Design Thinking’ para crear un ‘Kit de Primeros Auxilios para la Reputación Digital’ para ayudar a Daniela (y a ustedes mismos).”</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Challenge Express ⏰ 3 minutos</h3>
+                            <p>Pide a los equipos que se pongan en los zapatos de Daniela y listen 3 a 5 riesgos para su reputación.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">“Pónganse en los zapatos de Daniela. ¿Qué es lo peor que podrían encontrar de ella? Hagan una lista de 3 a 5 riesgos. Por ejemplo: ‘Una foto donde la etiquetaron sin permiso’, ‘Un apodo vergonzoso en un perfil viejo’. Definan bien el problema. Tienen 3 minutos.”</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 3: Challenge Express ⏰ 3 minutos</h3>
+                            <p>Pide a los equipos que propongan soluciones y estrategias concretas para cada riesgo.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">“Ahora, para cada riesgo que encontraron, propongan una solución o estrategia. Si el problema es una foto vieja, ¿la estrategia es hablar con el amigo que la subió? Si es un comentario, ¿es borrarlo? Piensen en acciones concretas que le devuelvan el control de su imagen. ¡Lluvia de ideas en 3 minutos!”</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 4: Challenge Express ⏰ 2 minutos</h3>
+                            <p>Pide a los equipos que diseñen su "Kit de Primeros Auxilios para la Reputación Digital" (checklist, mini-guía o infografía).</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">“¡Es hora de construir! Con sus mejores ideas, diseñen su ‘Kit de Primeros Auxilios’. Puede ser una checklist (lista de verificación), una mini-guía con 3 pasos o una infografía con dibujos. Debe ser una herramienta que cualquiera pueda usar para revisar y proteger su reputación. Tienen 2 minutos para crear su prototipo.”</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-4">
+                <h2>⚡ Actividad 4: Ticket de Salida/Tweet de Aprendizaje ⏰ 5 minutos</h2>
+                <p>Sintetizar el aprendizaje en un consejo personal y estratégico sobre la gestión de la reputación.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Ticket de Salida/Tweet de Aprendizaje ⏰ 2 minutos</h3>
+                            <p>Proyecta Diapositiva 9. Tweet de Aprendizaje.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">“Para cerrar, escriban su propio Consejo Estratégico Digital. Una frase, un tweet, que resuma su mejor idea para cuidar la reputación pensando en el futuro.<br>Ejemplo del maestro: Mi consejo: Reviso mis etiquetas cada mes. Mi yo del futuro me lo agradecerá. #EstrategiaDigital<br>Antes de terminar, quédense con una idea que tenga sentido para ustedes.”</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Ticket de Salida/Tweet de Aprendizaje ⏰ 2 minutos</h3>
+                            <p>Pide a los estudiantes que compartan su Consejo Estratégico con un compañero y escuchen su idea.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">“Compartan su Consejo Estratégico con la persona de al lado. Escuchen su idea. ¿En qué se parecen? ¿Qué pueden aprender de su perspectiva? Fortalecer nuestra ética es un trabajo en equipo.”</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 3: Ticket de Salida/Tweet de Aprendizaje ⏰ 1 minutos</h3>
+                            <p>Proyecta Diapositiva 10. Reflexión final.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">“Hoy no solo hablaron de estrategias, las crearon. Ser un estratega digital no es tener miedo del futuro, es construirlo con inteligencia y cuidado. Gracias por pensar como los creadores responsables que son.”</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
